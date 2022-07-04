@@ -1,0 +1,25 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+<h2>Submit LIsting</h2>
+
+<form action="#">
+    {% csrf_token %}
+<!-- Input field -->
+    Title inpout field (mandatory)
+    <input type="text" name="title">
+    <br>
+    Description input field (mandatory)
+    <input type="text" name="description">
+    <br>
+    Starting bid input field (mandatory)
+    <input type="number" name="startBid">
+    <br>
+    Category input field (not mandatory)
+    <input type="text" name="category">
+    <br>
+    Image url inoput field (not mandatory)
+    <input type="text" name="image">
+    <br>
+</form>
+{% endblock %}
